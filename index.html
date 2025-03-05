@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fira de Patrimoni Cultural i Expressions Artístiques 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --marron-oscuro: #5D4037;
+            --marron-claro: #D7CCC8;
+            --beige-fons: #F3ECE7;
+            --beige-card: #EFE7E2;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .focus-outline:focus {
+            outline: 3px solid #C19A6B;
+            padding: 4px;
+        }
+
+        .gallery-item {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .gallery-item img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gallery-caption {
+            padding: 8px;
+            background-color: var(--beige-card);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="bg-[var(--beige-fons)] text-[#3E2723]">
+
+    <a href="#main-content" class="sr-only focus:not-sr-only">Saltar al contingut principal</a>
+
+    <header class="h-[60vh] relative flex items-center justify-center text-white overflow-hidden">
+        <video autoplay muted loop class="absolute w-full h-full object-cover">
+            <source src="fondo4.mp4" type="video/mp4">
+            El teu navegador no suporta vídeos.
+        </video>
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative text-center z-10">
+            <h1 class="text-5xl font-bold">Fira de Patrimoni Cultural i Expressions Artístiques 2025</h1>
+            <p class="mt-2 text-lg">Descobreix la riquesa cultural de Catalunya a través d'activitats i exposicions</p>
+        </div>
+    </header>
+
+    <nav class="bg-[var(--marron-oscuro)] text-white">
+        <ul class="flex justify-center space-x-6 p-4">
+            <li><a href="#programa" class="focus-outline">Programa</a></li>
+            <li><a href="#galeria" class="focus-outline">Galeria</a></li>
+            <li><a href="#articles" class="focus-outline">Articles</a></li>
+            <li><a href="#inscripcio" class="focus-outline">Inscripció</a></li>
+            <li><a href="#contacte" class="focus-outline">Com arribar-hi</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content" class="max-w-6xl mx-auto p-6 space-y-10">
+
+        <section id="programa" class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-[var(--marron-oscuro)]">Programa d'Activitats</h2>
+            <p class="mt-2 mb-4 text-[var(--marron-oscuro)]">
+                A continuació es detalla el programa complet de la Fira de Patrimoni Cultural i Expressions Artístiques
+                2025. Cada activitat està dissenyada per promoure la difusió, preservació i reinterpretació del nostre
+                patrimoni cultural, combinant tradició i innovació.
+            </p>
+            <table class="w-full border-collapse border mt-4">
+                <thead class="bg-[var(--marron-oscuro)] text-white">
+                    <tr>
+                        <th scope="col" class="p-2">Hora</th>
+                        <th scope="col" class="p-2">Activitat</th>
+                        <th scope="col" class="p-2">Ubicació</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-2">10:00 - 11:00</td>
+                        <td>Inauguració Oficial i Visita Guiada a l'Exposició Permanent de Patrimoni Escultòric</td>
+                        <td>Sala Principal</td>
+                    </tr>
+                    <tr class="bg-[var(--beige-card)]">
+                        <td class="p-2">11:30 - 13:00</td>
+                        <td>Taller pràctic: Creació de ceràmica ancestral amb tècniques tradicionals i modernes</td>
+                        <td>Espai Tallers</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">13:15 - 14:00</td>
+                        <td>Conferència Magistral: L’evolució del patrimoni oral a Catalunya i la seva preservació en
+                            l’era digital</td>
+                        <td>Auditori Històric</td>
+                    </tr>
+                    <tr class="bg-[var(--beige-card)]">
+                        <td class="p-2">15:30 - 17:00</td>
+                        <td>Taula Rodona: El futur dels museus i la seva adaptació als nous públics i tecnologies</td>
+                        <td>Sala de Conferències</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">17:15 - 18:30</td>
+                        <td>Espectacle de dansa contemporània inspirada en llegendes i tradicions catalanes</td>
+                        <td>Pati Exterior</td>
+                    </tr>
+                    <tr class="bg-[var(--beige-card)]">
+                        <td class="p-2">19:00 - 20:00</td>
+                        <td>Presentació interactiva: Mapping audiovisual sobre la història visual de l’art català</td>
+                        <td>Façana Històrica</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">20:30 - 21:30</td>
+                        <td>Concert de música tradicional reinterpretada amb instruments contemporanis</td>
+                        <td>Auditori Exterior</td>
+                    </tr>
+                    <tr class="bg-[var(--beige-card)]">
+                        <td class="p-2">21:45 - 22:30</td>
+                        <td>Clausura i homenatge a artistes i artesans guardonats</td>
+                        <td>Sala d’Actes</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="mt-4 text-[var(--marron-oscuro)]">
+                El programa pot estar subjecte a canvis. Es recomana als assistents consultar la web oficial el dia
+                previ a l’esdeveniment per confirmar horaris i ubicacions.
+            </p>
+        </section>
+
+        <section id="galeria" class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-[var(--marron-oscuro)]">Galeria Visual</h2>
+            <p class="mt-2 mb-4 text-[var(--marron-oscuro)]">
+                A la nostra galeria visual podràs gaudir d'una selecció d'imatges representatives de les activitats i exposicions de la Fira de Patrimoni Cultural i Expressions Artístiques. Des de l’art més tradicional fins a les propostes més innovadores, aquesta col·lecció reflecteix la riquesa i diversitat cultural de Catalunya.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+                <figure class="gallery-item">
+                    <img src="expo.jpg" alt="Exposició de pintura antiga" class="w-full h-48 object-cover">
+                    <figcaption class="gallery-caption">Exposició de Pintura Antiga - Un viatge a través dels segles</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="escultura.jpg" alt="Escultura moderna" class="w-full h-48 object-cover">
+                    <figcaption class="gallery-caption">Escultura Moderna - Expressió artística i innovació</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="dansa.jpg" alt="Espectacle de dansa contemporània" class="w-full h-48 object-cover">
+                    <figcaption class="gallery-caption">Dansa Contemporània - Tradició i moviment</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="ceramica.jpg" alt="Taller de ceràmica tradicional" class="w-full h-48 object-cover">
+                    <figcaption class="gallery-caption">Taller de Ceràmica - Fusionant tècnica i creativitat</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="mapping.jpg" alt="Espectacle de mapping nocturn" class="w-full h-48 object-cover">
+                    <figcaption class="gallery-caption">Mapping Nocturn - L'art projectat sobre patrimoni històric</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="artistes.jpg" alt="Artistes creant en viu durant la fira" class="w-full h-48 object-cover">
+                    <figcaption class="gallery-caption">Artistes en Acció - Creació en directe durant la fira</figcaption>
+                </figure>
+            </div>
+            <p class="mt-4 text-[var(--marron-oscuro)]">
+                Totes les imatges han estat capturades durant edicions anteriors de la fira i reflecteixen la passió i el talent dels participants. Convidem a tothom a immortalitzar la seva experiència i compartir-la amb nosaltres mitjançant les nostres xarxes socials oficials.
+            </p>
+        </section>
+        
+        <section id="articles" class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-[var(--marron-oscuro)]">Articles destacats</h2>
+            
+            <article class="mt-4">
+                <h3 class="text-xl font-bold">La preservació de la ceràmica catalana: entre tradició i innovació</h3>
+                <p class="mt-2">
+                    La ceràmica és una de les disciplines artístiques més arrelades a la història cultural de Catalunya. Des dels antics tallers de terrissaires fins als estudis contemporanis, els mestres ceramistes han transmès les seves tècniques de generació en generació, adaptant-se als canvis estètics i tecnològics.
+                </p>
+                <p class="mt-2">
+                    Avui dia, la preservació de la ceràmica passa no només per la conservació de peces històriques en museus, sinó també per la transmissió activa d'aquests coneixements a través de tallers, exposicions interactives i projectes educatius. Aquesta transmissió és clau per mantenir viva una disciplina que combina habilitat artesanal amb una expressió artística personal i única.
+                </p>
+            </article>
+        
+            <article class="mt-8">
+                <h3 class="text-xl font-bold">L’impacte de la tecnologia en la preservació del patrimoni cultural</h3>
+                <p class="mt-2">
+                    Les eines digitals han revolucionat la manera com documentem, conservem i difonem el patrimoni cultural. Les tècniques d’escaneig 3D permeten capturar amb precisió escultures, edificis i peces d’art, creant rèpliques digitals que poden ser consultades des de qualsevol lloc del món.
+                </p>
+                <p class="mt-2">
+                    A més, la realitat augmentada i la realitat virtual ofereixen noves experiències immersives per als visitants, que poden interactuar amb obres d’art o descobrir com eren les ciutats històriques en el passat. Aquesta combinació de tecnologia i patrimoni no només facilita la conservació, sinó que obre noves vies de divulgació adaptades a les generacions digitals.
+                </p>
+            </article>
+        
+            <article class="mt-8">
+                <h3 class="text-xl font-bold">Les escultures públiques com a reflex de la identitat col·lectiva</h3>
+                <p class="mt-2">
+                    El paisatge urbà català està ple d’escultures públiques que expliquen la història i els valors de cada comunitat. Aquestes obres, sovint situades a places i parcs, actuen com a punts de trobada i reflexió, integrant l’art en la vida quotidiana.
+                </p>
+                <p class="mt-2">
+                    Més enllà de la seva funció estètica, les escultures públiques també han esdevingut testimonis d’esdeveniments històrics i reivindicacions socials. Preservar-les significa conservar la memòria col·lectiva i assegurar que les generacions futures comprenguin la seva importància cultural i simbòlica.
+                </p>
+            </article>
+        
+            <article class="mt-8">
+                <h3 class="text-xl font-bold">La importància dels museus locals en la difusió del patrimoni</h3>
+                <p class="mt-2">
+                    Els museus locals juguen un paper fonamental en la preservació i difusió del patrimoni cultural. A diferència dels grans museus nacionals, els museus locals ofereixen una visió íntima i pròxima de les tradicions, històries i expressions artístiques pròpies de cada territori.
+                </p>
+                <p class="mt-2">
+                    A més, aquests espais solen ser plataformes actives de creació contemporània, acollint exposicions temporals, tallers educatius i iniciatives que connecten els artistes locals amb la seva comunitat. Aquesta interacció dinàmica entre passat i present converteix els museus locals en pilars essencials de la vida cultural.
+                </p>
+            </article>
+        
+            <article class="mt-8">
+                <h3 class="text-xl font-bold">L’art efímer: una nova manera de reinterpretar el patrimoni</h3>
+                <p class="mt-2">
+                    En un món en constant transformació, l’art efímer ha guanyat protagonisme com una forma de reflexionar sobre la fragilitat de la cultura i el patrimoni. Instal·lacions temporals, performances al carrer i projectes col·laboratius redefineixen la relació entre el públic, l’espai i l’obra d’art.
+                </p>
+                <p class="mt-2">
+                    Tot i el seu caràcter temporal, aquestes obres generen un fort impacte emocional i social, creant vincles profunds amb la comunitat. Integrar l’art efímer en esdeveniments culturals com la Fira de Patrimoni Cultural i Expressions Artístiques ajuda a estimular la creativitat col·lectiva i a repensar el valor de la memòria compartida.
+                </p>
+            </article>
+        
+        </section>
+        
+        <section id="inscripcio" class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-[var(--marron-oscuro)]" tabindex="100">Inscripció</h2>
+            <p class="mt-2 mb-4 text-[var(--marron-oscuro)]" tabindex="101">
+                Omple el formulari per registrar-te a la Fira de Patrimoni Cultural i Expressions Artístiques 2025.
+            </p>
+        
+            <form action="#" method="POST" class="space-y-4">
+                <div>
+                    <label for="nom" class="block font-medium text-[var(--marron-oscuro)]" tabindex="102">Nom complet:</label>
+                    <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom complet" required 
+                           class="w-full border p-2 rounded focus:outline-none focus:ring-2 focus:ring-[var(--marron-oscuro)]" tabindex="103">
+                </div>
+        
+                <div>
+                    <label for="email" class="block font-medium text-[var(--marron-oscuro)]" tabindex="104">Correu electrònic:</label>
+                    <input type="email" id="email" name="email" placeholder="Introdueix el teu correu electrònic" required 
+                           class="w-full border p-2 rounded focus:outline-none focus:ring-2 focus:ring-[var(--marron-oscuro)]" tabindex="105">
+                </div>
+        
+                <fieldset class="border p-3 rounded space-y-2" tabindex="106">
+                    <legend class="font-medium text-[var(--marron-oscuro)]">Tipus d'entrada</legend>
+                    <div class="flex items-center space-x-4">
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="tipus" value="General" class="focus:ring-[var(--marron-oscuro)]" required tabindex="107">
+                            <span class="ml-2">General</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="tipus" value="VIP" class="focus:ring-[var(--marron-oscuro)]" required tabindex="108">
+                            <span class="ml-2">VIP</span>
+                        </label>
+                    </div>
+                </fieldset>
+        
+                <div>
+                    <label for="comentaris" class="block font-medium text-[var(--marron-oscuro)]" tabindex="109">Comentaris addicionals (opcional):</label>
+                    <textarea id="comentaris" name="comentaris" rows="4" placeholder="Vols afegir alguna observació?" 
+                              class="w-full border p-2 rounded focus:outline-none focus:ring-2 focus:ring-[var(--marron-oscuro)]" tabindex="110"></textarea>
+                </div>
+        
+                <button type="submit" 
+                        class="bg-[var(--marron-oscuro)] text-white px-4 py-2 rounded hover:bg-[var(--marron-claro)] focus:outline-none focus:ring-2 focus:ring-[var(--marron-oscuro)]" 
+                        tabindex="111">
+                    Inscriure's
+                </button>
+            </form>
+        </section>        
+
+        <footer class="bg-[var(--marron-oscuro)] text-white text-center py-4">&copy; 2025 Fira de Patrimoni Cultural -
+            Tots els drets reservats</footer>
+
+</body>
+
+</html>
